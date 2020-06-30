@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/onSaleListFragment"
+            android:icon="@drawable/ic_store"
+            android:title="@string/all_on_sale_list" />
+        <item
+            android:id="@+id/itemListFragment"
+            android:icon="@drawable/ic_list"
+            android:title="@string/items" />
+        <item
+            android:id="@+id/itemsOfInterestListFragment"
+            android:icon="@drawable/ic_heart"
+            android:title="@string/favourites" />
+        <item
+            android:id="@+id/boughtItemsListFragment"
+            android:icon="@drawable/ic_money_off"
+            android:title="@string/bought_items" />
+        <item
+            android:id="@+id/showProfileFragment"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile" />
+    </group>
+</menu>

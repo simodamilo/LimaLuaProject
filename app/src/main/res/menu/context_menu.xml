@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/galleryEditProfileMI"
+        android:title="@string/chooseFromGallery" />
+    <item
+        android:id="@+id/cameraEditProfileMI"
+        android:title="@string/captureFromCamera" />
+</menu>

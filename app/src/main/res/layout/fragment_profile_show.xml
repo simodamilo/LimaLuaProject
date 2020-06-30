@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userImageShowProfileIV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/BlueGray50"
+            android:contentDescription="@string/userImage"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/fullnameShowProfileTV"
+            app:layout_constraintDimensionRatio="4:3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile_image" />
+
+
+        <TextView
+            android:id="@+id/fullnameShowProfileTV"
+            style="@style/MyFragmentShowProfileStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:text="@string/fullname"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/nicknameShowProfileTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImageShowProfileIV" />
+
+        <TextView
+            android:id="@+id/nicknameShowProfileTV"
+            style="@style/MyFragmentShowProfileStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:drawableStart="@drawable/ic_person_pin"
+            android:drawablePadding="16dp"
+            android:text="@string/nickname"
+            app:layout_constraintBottom_toTopOf="@+id/emailShowProfileTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullnameShowProfileTV"
+            app:layout_goneMarginTop="48dp" />
+
+        <TextView
+            android:id="@+id/emailShowProfileTV"
+            style="@style/MyFragmentShowProfileStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:text="@string/email"
+            app:layout_constraintBottom_toTopOf="@+id/locationMapShowProfileMV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nicknameShowProfileTV" />
+
+        <com.google.android.gms.maps.MapView xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/locationMapShowProfileMV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/ratingLabelShowProfileTV"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailShowProfileTV"
+            map:layout_goneMarginTop="24dp"
+            map:liteMode="true"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ratingLabelShowProfileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/ratingLabel"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/ratingShowProfileRB"
+            app:layout_constraintEnd_toStartOf="@id/reviewShowProfileB"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/locationMapShowProfileMV"
+            app:layout_goneMarginTop="32dp"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/reviewShowProfileB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="@string/reviewButton"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ratingLabelShowProfileTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ratingLabelShowProfileTV"
+            app:layout_constraintTop_toTopOf="@id/ratingLabelShowProfileTV"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/totalReviewShowProfileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/ratingShowProfileRB"
+            app:layout_constraintStart_toStartOf="@id/ratingShowProfileRB"
+            app:layout_constraintTop_toBottomOf="@id/ratingLabelShowProfileTV"
+            app:layout_constraintVertical_bias="1.0"
+            tools:visibility="visible" />
+
+        <RatingBar
+            android:id="@+id/ratingShowProfileRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/signShowProfileBTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ratingLabelShowProfileTV"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/signShowProfileBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingShowProfileRB"
+            app:layout_goneMarginTop="40dp" />
+
+
+        <View
+            android:id="@+id/hidePanelShowProfileVW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.35"
+            android:background="#000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

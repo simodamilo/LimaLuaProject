@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onSaleListFragment">
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ItemListFragment">
+        <action
+            android:id="@+id/action_itemListFragment_to_itemDetailsFragment"
+            app:destination="@id/item_details_graph"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_itemListFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfileFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ProfileShowFragment">
+        <action
+            android:id="@+id/action_showProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_showProfileFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ProfileEditFragment">
+        <action
+            android:id="@+id/action_editProfileFragment_to_showProfileFragment"
+            app:destination="@id/showProfileFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/showProfileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemEditFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ItemEditFragment">
+        <action
+            android:id="@+id/action_itemEditFragment_to_itemDetailsFragment"
+            app:destination="@id/item_details_graph"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/itemEditFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onSaleListFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.OnSaleListFragment"
+        tools:layout="@layout/fragment_on_sale_list">
+        <action
+            android:id="@+id/action_onSaleListFragment_to_itemDetailsFragment"
+            app:destination="@id/item_details_graph"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ReviewFragment" />
+
+    <navigation
+        android:id="@+id/item_details_graph"
+        app:startDestination="@id/itemDetailsFragment">
+        <fragment
+            android:id="@+id/itemDetailsFragment"
+            android:name="it.polito.mad.runtimeterrormad.ui.ItemDetailsFragment">
+            <action
+                android:id="@+id/action_itemDetailsFragment_to_itemEditFragment"
+                app:destination="@id/itemEditFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+            <action
+                android:id="@+id/action_itemDetailsFragment_to_followerListDialog"
+                app:destination="@id/subscribedUsersListDialog" />
+            <action
+                android:id="@+id/action_itemDetailsFragment_to_showProfileFragmentTemp"
+                app:destination="@id/showOtherProfileFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
+            <action
+                android:id="@+id/action_itemDetailsFragment_to_mapFragment"
+                app:destination="@id/mapFragment" />
+            <action
+                android:id="@+id/action_itemDetailsFragment_to_statusDialog"
+                app:destination="@id/statusDialog" />
+        </fragment>
+        <dialog
+            android:id="@+id/subscribedUsersListDialog"
+            android:name="it.polito.mad.runtimeterrormad.ui.SubscribedUsersListDialog"
+            android:label="FollowerListDialog" />
+        <fragment
+            android:id="@+id/showOtherProfileFragment"
+            android:name="it.polito.mad.runtimeterrormad.ui.ProfileShowFragment">
+            <action
+                android:id="@+id/action_showOtherProfileFragment_to_otherReviewFragment"
+                app:destination="@id/otherReviewFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
+        </fragment>
+        <fragment
+            android:id="@+id/otherReviewFragment"
+            android:name="it.polito.mad.runtimeterrormad.ui.ReviewFragment" />
+        <dialog
+            android:id="@+id/statusDialog"
+            android:name="it.polito.mad.runtimeterrormad.ui.StatusDialog"
+            android:label="StatusDialog" />
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="it.polito.mad.runtimeterrormad.ui.MapFragment"
+            tools:layout="@layout/fragment_map" />
+    </navigation>
+    <fragment
+        android:id="@+id/itemsOfInterestListFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.ItemsOfInterestListFragment"
+        tools:layout="@layout/fragment_items_of_interest_list">
+        <action
+            android:id="@+id/action_itemsOfInterestListFragment_to_item_details_graph"
+            app:destination="@id/item_details_graph"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/boughtItemsListFragment"
+        android:name="it.polito.mad.runtimeterrormad.ui.BoughtItemsListFragment">
+        <action
+            android:id="@+id/action_boughtItemsListFragment_to_item_details_graph"
+            app:destination="@id/item_details_graph"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+</navigation>

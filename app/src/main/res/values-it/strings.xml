@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Lima Lua</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="items">I Miei Annunci</string>
+    <string name="fullname">Nome completo</string>
+    <string name="email">Indirizzo email</string>
+    <string name="userImage">Immagine utente</string>
+    <string name="chooseFromGallery">Scegli dalla Galleria</string>
+    <string name="captureFromCamera">Scatta una foto</string>
+    <string name="edit">Modifica</string>
+    <string name="save">Salva</string>
+    <string name="emptyFieldsToast">Controlla i campi</string>
+    <string name="cameraErrorToast">Nessuna camera disponibile</string>
+    <string name="memoryErrorToast">Impossibile scattare una foto. Controllare lo spazio libero</string>
+    <string name="updatedShowProfileToast">Profilo salvato</string>
+    <string name="profile">Profilo</string>
+    <string name="itemImageDescription">Immagine elemento</string>
+    <string name="title">Titolo</string>
+    <string name="subtitle">Sottotitolo</string>
+    <string name="description">Descrizione</string>
+    <string name="price">Prezzo</string>
+    <string name="expiry_date">Data di scadenza</string>
+    <string name="noAdv">Inserisci qui i tuoi annunci</string>
+    <string name="currency">€&#160;</string>
+    <string name="savedItemToast">Elemento salvato</string>
+    <string name="searchLabel">Ricerca per: %1$s</string>
+    <string name="apply_some_filter">Applica dei filtri</string>
+    <string name="min_price">Prezzo Minimo</string>
+    <string name="max_price">Prezzo Massimo</string>
+    <string name="no_items_on_sale">Nessun oggetto da visualizzare</string>
+    <string name="all_on_sale_list">Annunci</string>
+
+    <string name="category">Categoria</string>
+    <string name="errorSignInButtonText">Aggiornare Google Play Services per effettuare l\'accesso</string>
+
+    <!--<string-array name="itemStatusArray">
+        <item>Disponibile</item>
+        <item>Sospeso</item>
+        <item>Venduto</item>
+    </string-array>-->
+    <string name="availableLabel">Disponibile</string>
+    <string name="suspendedLabel">Sospeso</string>
+    <string name="soldLabel">Venduto</string>
+
+    <string-array name="categories">
+        <item> Arte &amp; Artigianato</item>
+        <item> Pittura\, Disegno &amp; Rifornimenti Arte</item>
+        <item> Cucitura</item>
+        <item> Scrapbooking &amp; Stampa</item>
+        <item> Decorazioni Eventi &amp; Rifornimenti</item>
+        <item> Sport &amp; Hobby</item>
+        <item> Sport and Outdoor</item>
+        <item> Svago Outdoor</item>
+        <item> Sport &amp; Fitness</item>
+        <item> Forniture Animali Domestici</item>
+        <item> Neonati</item>
+        <item> Abbigliamento &amp; Accessori</item>
+        <item> Giocattoli per Bambini e Neonati</item>
+        <item> Sedili Auto &amp; Accessori</item>
+        <item> Gravidanza &amp; Maternità</item>
+        <item> Passeggini &amp; Accessori</item>
+        <item> Moda Donna</item>
+        <item> Abbigliamento</item>
+        <item> Scarpe</item>
+        <item> Orologi</item>
+        <item> Borse</item>
+        <item> Accessori</item>
+        <item> Moda Uomo</item>
+        <item> Abbigliamento</item>
+        <item> Scarpe</item>
+        <item> Orologi</item>
+        <item> Accessori</item>
+        <item> Elettronica</item>
+        <item> Computer</item>
+        <item> Schermi</item>
+        <item> Stampanti &amp; Scanner</item>
+        <item> Camera &amp; Photo</item>
+        <item> Smartphone &amp; Tablet</item>
+        <item> Audio</item>
+        <item> Televisione &amp; Video</item>
+        <item> Video Game Console</item>
+        <item> Tecnologia Indossabile</item>
+        <item> Accessori &amp; Rifornimenti</item>
+        <item> Ferri da Stiro &amp; Steamer</item>
+        <item> Aspirapolvere &amp; Cura Pavimento</item>
+        <item> Games &amp; Videogames</item>
+        <item> Miniature &amp; Statuette</item>
+        <item> Arte &amp; Artigianato</item>
+        <item> Giocattoli da Costruzione</item>
+        <item> Bambole &amp; Accessori</item>
+        <item> Elettronica per bambini</item>
+        <item> Apprendimento &amp; Educazione</item>
+        <item> Scooter a Tre Ruote &amp; Carri</item>
+        <item> Videogame</item>
+        <item> Automobilistici</item>
+        <item> Macchine Elettriche &amp; Accessori</item>
+        <item> Accessori</item>
+        <item> Moto &amp; Powersports</item>
+        <item> Pezzi di Ricambio</item>
+        <item> Pezzi RV &amp; Accessori</item>
+        <item> Strumenti &amp; Equipaggiamento</item>
+    </string-array>
+
+    <string name="wrongEmailError">Inserisci un indirizzo email valido</string>
+    <string name="emptyFullnameError">Inserisci un nome completo</string>
+    <string name="emptyNicknameError">Inserisci un nickname</string>
+    <string name="emptyEmailError">Inserisci un indirizzo email</string>
+    <string name="emptyTitleError">Inserisci un titolo</string>
+    <string name="emptyDescriptionError">Inserisci una descizione</string>
+    <string name="emptyExpiryDateError">Seleziona una data</string>
+    <string name="emptyPriceError">Inserisci un prezzo</string>
+    <string name="emptyCategoryError">Seleziona una categoria</string>
+    <string name="cancel">Annulla</string>
+    <string name="itemSuspended">La vendita di questo oggetto è stata sospesa</string>
+    <string name="itemSold">L\'oggetto è stato venduto</string>
+    <string name="statusDialogTitle">Cambia lo stato dell\'oggetto</string>
+    <string name="changeStatus">Cambia stato</string>
+    <string name="followerListDialogTitle">Utenti interessati</string>
+    <string name="signinButtonText">Accedi</string>
+    <string name="signoutButtonText">Esci</string>
+    <string name="signedInSnackbar">Accesso eseguito correttamente</string>
+    <string name="signedOutSnackbar">Uscita eseguita correttamente</string>
+    <string name="errorSignInFirebaseSnackbar">Errore inaspettato nell\'accesso</string>
+    <string name="findButton">Cerca</string>
+    <string name="clearFiltersButton">Elimina Filtri</string>
+    <string name="favourites">Preferiti</string>
+    <string name="bought_items">Prodotti acquistati</string>
+    <string name="informativeMessage">Premi \'Ottieni ora\' per visualizzare l\'email del venditore. Non preoccuparti, nessun acquisto sarà effettuato senza un accordo con il venditore.</string>
+    <string name="informativeMessageTitle">Come ottenere l\'email</string>
+    <string name="getEmailText">Ottieni email</string>
+    <string name="getEmailButton">Ottieni ora</string>
+    <string name="noBuyerSelectedSnackbar">Selezionare l\'acquirente</string>
+    <string name="ratingConfirmDialog">Sei sicuro di voler assegnare %1$s stelle all\'utente?</string>
+    <string name="positiveUdateRatingSnackbar">Valutazione correttamente inserita</string>
+    <string name="negativeUdateRatingSnackbar">Errore durante l\'inserimento della valutazione</string>
+    <string name="ratingLabel">Voti</string>
+    <string name="reviewButton">Recensioni</string>
+    <string name="totalRating">%1$s voti</string>
+    <string name="itemSuspendedTitle">Oggetto sospeso</string>
+    <string name="itemSuspendedBody">%1$s ha sospeso la vendita dell\'oggetto \"%2$s\". Sarai notificato in caso il venditore cambiasse idea."</string>
+    <string name="itemAvailableTitle">Oggetto disponibile</string>
+    <string name="subscriptionAddedTitle">Nuovo utente interessato</string>
+    <string name="subscriptionAddedBody">%1$s si è sottoscritto al tuo oggetto \"%2$s\" e sarà notificato in caso di qualsiasi aggiornamento."</string>
+    <string name="willingToBuyAddedTitle">Nuovo potenziale acquirente</string>
+    <string name="itemSoldTitle">Oggetto venduto</string>
+    <string name="itemSoldBody">%1$s ha venduto l\'oggetto \"%2$s\". Sarà per la prossima volta.</string>
+    <string name="sendReviewButton">Invia</string>
+    <string name="insert_a_review">Inserisci una recensione</string>
+    <string name="choose_buyer">Scegli l\'acquirente</string>
+    <string name="no_review_to_see">Nessuna recensione disponibile</string>
+    <string name="search_location">Inserisci posizione…</string>
+    <string name="search_button">Cerca</string>
+    <string name="no_connection_location">Impossibile connettersi al server, riprovare più tardi</string>
+    <string name="no_location">Posizione \"%1$s\" non trovata</string>
+    <string name="itemNotEditableSnackbar">L\'oggetto è stato venduto e non è più modificabile</string>
+    <string name="confirmSellDialogMessage">Vuoi davvero vendere il tuo oggetto a %1$s? Il tuo annuncio verrà eliminato permanentemente.</string>
+    <string name="itemBoughtTitle">Oggetto acquistato</string>
+    <string name="itemBoughtBody">Congratulazioni, sei riuscito ad acquistare l\'oggetto \"%2$s\". Considera l\'idea di lasciare una recensione per %1$s.</string>
+    <string name="itemAvailableBody">%1$s ha rimesso in vendita l\'oggetto \"%2$s\". Se sei ancora interessato, puoi contattare il venditore per trovare un accordo.</string>
+    <string name="willingToBuyAddedBody">%1$s è interessato all\'acquisto del tuo oggetto \"%2$s\" e d\'ora in poi può contattarti tramite mail. Buona fortuna con la vendita.</string>
+    <string name="delete">Elimina</string>
+    <string name="confirmDeleteItem">Sei sicuro di voler eliminare permanentemente questo annuncio?</string>
+
+</resources>

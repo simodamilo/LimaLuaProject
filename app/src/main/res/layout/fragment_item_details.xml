@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/subtitleItemDetailsTV"
+            app:layout_constraintEnd_toStartOf="@+id/profileItemDetailsCW"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginRight="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profileItemDetailsCW"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/BlueGray50"
+            android:visibility="gone"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/titleItemDetailsTV"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/likesItemDetailsBTN"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/titleItemDetailsTV"
+            app:layout_constraintTop_toTopOf="@+id/titleItemDetailsTV"
+            app:layout_goneMarginRight="16dp"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/profileItemDetailsIW"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BlueGray50"
+                android:contentDescription="@string/profileImageDescription"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/likesItemDetailsBTN"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="8dp"
+            android:text="@string/minLikesVisible"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:icon="@drawable/ic_heart"
+            app:iconPadding="2dp"
+            app:iconTint="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/titleItemDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/profileItemDetailsCW"
+            app:layout_constraintTop_toTopOf="@+id/titleItemDetailsTV"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/subtitleItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/sendReviewItemDetailsB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleItemDetailsTV"
+            tools:visibility="visible" />
+
+        <RatingBar
+            android:id="@+id/ratingItemDetailsRB"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/sendReviewItemDetailsB"
+            app:layout_constraintEnd_toStartOf="@id/sendReviewItemDetailsB"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/sendReviewItemDetailsB"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/sendReviewItemDetailsB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/sendReviewButton"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/reviewItemDetailsTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/ratingItemDetailsRB"
+            app:layout_constraintTop_toBottomOf="@id/subtitleItemDetailsTV"
+            app:layout_constraintVertical_bias="0.0"
+            tools:visibility="visible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reviewItemDetailsTIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/insert_a_review"
+            android:visibility="gone"
+            app:counterEnabled="true"
+            app:counterMaxLength="400"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@id/statusItemDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sendReviewItemDetailsB"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reviewItemDetailsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLength="400"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/statusItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/imageItemDetailsCV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reviewItemDetailsTIL"
+            tools:visibility="visible" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageItemDetailsCV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/buyerItemDetailsTV"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusItemDetailsTV">
+
+            <ImageView
+                android:id="@+id/itemImageItemDetailsIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BlueGray50"
+                android:contentDescription="@string/itemImageDescription"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_item_image" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/buyerItemDetailsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:drawablePadding="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/getEmailText"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/emailItemDetailsTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageItemDetailsCV"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/informativeItemDetailsIB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            android:contentDescription="@string/informativeImageDescription"
+            android:focusable="true"
+            android:src="@drawable/ic_info_outline"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/buyerItemDetailsTV"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@id/buyerItemDetailsTV"
+            app:layout_constraintTop_toTopOf="@id/buyerItemDetailsTV"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/buyItemDetailsB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:padding="0dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/getEmailButton"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/buyerItemDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/informativeItemDetailsIB"
+            app:layout_constraintTop_toTopOf="@id/buyerItemDetailsTV"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/emailItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:ellipsize="end"
+            android:linksClickable="true"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/expiryDateItemDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buyerItemDetailsTV"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/expiryDateItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_date_range"
+            android:drawablePadding="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/categoryItemDetailsTV"
+            app:layout_constraintEnd_toStartOf="@+id/priceItemDetailsTV"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailItemDetailsTV" />
+
+        <TextView
+            android:id="@+id/priceItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_local_offer"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/expiryDateItemDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/expiryDateItemDetailsTV"
+            app:layout_constraintTop_toTopOf="@+id/expiryDateItemDetailsTV" />
+
+
+        <TextView
+            android:id="@+id/categoryItemDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_category"
+            android:drawablePadding="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionItemDetailsCV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expiryDateItemDetailsTV" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/descriptionItemDetailsCV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:cardElevation="3dp"
+            app:layout_goneMarginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/locationMapItemDetailsMV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryItemDetailsTV">
+
+            <TextView
+                android:id="@+id/descriptionItemDetailsETV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="16sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.gms.maps.MapView xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/locationMapItemDetailsMV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionItemDetailsCV"
+            map:liteMode="true" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

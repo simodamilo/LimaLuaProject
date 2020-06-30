@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Lima Lua</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string name="items">My Advertisements</string>
+    <string name="fullname">Full Name</string>
+    <string name="nickname" translatable="false">Nickname</string>
+    <string name="email">Email address</string>
+    <string name="userImage">User image</string>
+    <string name="chooseFromGallery">Choose from gallery</string>
+    <string name="captureFromCamera">Capture from camera</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="emptyFieldsToast">Please check fields</string>
+    <string name="emptyFullnameError">Please insert a full name</string>
+    <string name="emptyNicknameError">Please insert a nickname</string>
+    <string name="emptyEmailError">Please insert an email address</string>
+    <string name="wrongEmailError">Please insert a valid email address</string>
+    <string name="emptyTitleError">Please insert a title</string>
+    <string name="emptyDescriptionError">Please insert a description</string>
+    <string name="emptyExpiryDateError">Please select a date</string>
+    <string name="emptyPriceError">Please insert a price</string>
+    <string name="emptyCategoryError">Please select a category</string>
+    <string name="cameraErrorToast">No camera found in your device</string>
+    <string name="memoryErrorToast">Cannot create image. Please check free space</string>
+    <string name="updatedShowProfileToast">Profile saved</string>
+    <string name="profile">Profile</string>
+    <string name="itemImageDescription">Item Image</string>
+    <string name="emptyString" translatable="false">&#160;</string>
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="noAdv">Insert here your advertisements</string>
+    <string name="currency">$&#160;</string>
+    <string name="savedItemToast">Item saved</string>
+    <string name="category">Category</string>
+    <string name="statusDialogTitle">Change item status</string>
+    <string name="changeStatus">Change Status</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="searchLabel">Search for: %1$s</string>
+
+    <string name="itemSuspended">The sale of this item has been suspended</string>
+    <string name="itemSold">This item has been sold</string>
+    <string name="followerImageDescription" translatable="false">followerImageDescription</string>
+    <string name="signinButtonText">Sign In</string>
+    <string name="signoutButtonText">Sign Out</string>
+    <string name="signedInSnackbar">Correctly signed in</string>
+    <string name="signedOutSnackbar">Correctly signed out</string>
+    <string name="errorSignInFirebaseSnackbar">Unexpected error in signing in</string>
+    <string name="errorSignInButtonText">Please update Google Play Services in order to access</string>
+    <string name="followerListDialogTitle">Interested users</string>
+    <string name="profileImageDescription" translatable="false">profileImageDescription</string>
+    <string name="maxLikesVisible" translatable="false">99+</string>
+    <string name="apply_some_filter">Apply some filters</string>
+    <string name="min_price">Min price</string>
+    <string name="max_price">Max price</string>
+    <string name="no_items_on_sale">No items to show</string>
+    <string name="all_on_sale_list">Advertisements</string>
+    <string name="search" translatable="false">search</string>
+    <string name="itemFilter" translatable="false">itemFilter</string>
+    <string name="filter" translatable="false">filter</string>
+    <string name="minLikesVisible" translatable="false">0</string>
+    <string name="findButton">Find</string>
+    <string name="clearFiltersButton">Clear Filters</string>
+    <string name="informativeMessage">Press \'Get Now\' in order to get seller email. Don\'t worry, no purchase will be made without a deal with the seller.</string>
+    <string name="informativeMessageTitle">How to get email</string>
+    <string name="informativeImageDescription" translatable="false">info</string>
+    <string name="getEmailText">Get email</string>
+    <string name="getEmailButton">Get now</string>
+    <string name="noBuyerSelectedSnackbar">Please, select a buyer</string>
+    <string name="ratingConfirmDialog">Are you sure you want to assign %1$s stars to the user?</string>
+    <string name="positiveUdateRatingSnackbar">Rating correctly sent</string>
+    <string name="negativeUdateRatingSnackbar">Error in rating process</string>
+    <string name="ratingLabel">Rating</string>
+    <string name="reviewButton">Review</string>
+    <string name="totalRating">%1$s rating</string>
+
+    <string name="itemSoldTitle">Item sold</string>
+    <string name="itemSoldBody">Unfortunately %1$s has sold the item \"%2$s\". Maybe next time.</string>
+
+    <string name="itemBoughtTitle">Item bought</string>
+    <string name="itemBoughtBody">Congrats, you managed to buy the item \"%2$s\". Please consider leaving a review for %1$s.</string>
+
+    <string name="itemSuspendedTitle">Item suspended</string>
+    <string name="itemSuspendedBody">%1$s has suspended the sell of the item \"%2$s\". You\'ll be notified if the seller changes mind.</string>
+    <string name="itemAvailableTitle">Item available</string>
+    <string name="itemAvailableBody">%1$s has put up for sale the item \"%2$s\". If you\'re still interested, you can contact the seller to find an agreement.</string>
+
+    <string name="subscriptionAddedTitle">New subscriber</string>
+    <string name="subscriptionAddedBody">%1$s is now subscribed to your item \"%2$s\" and will be notified about all changes.</string>
+
+    <string name="willingToBuyAddedTitle">New potential buyer</string>
+    <string name="willingToBuyAddedBody">%1$s wants to buy your item \"%2$s\" and can now contact you by email. Good look with the sale.</string>
+
+
+    <string name="availableLabel">Available</string>
+    <string name="suspendedLabel">Suspended</string>
+    <string name="soldLabel">Sold</string>
+
+    <string name="itemNotEditableSnackbar">Item has been sold and is no longer editable</string>
+
+    <string-array name="categories">
+        <item> Arts &amp; Crafts</item>
+        <item> Painting\, Drawing &amp; Art Supplies</item>
+        <item> Sewing</item>
+        <item> Scrapbooking &amp; Stamping</item>
+        <item> Party Decorations &amp; Supplies</item>
+        <item> Sports &amp; Hobby</item>
+        <item> Sports and Outdoors</item>
+        <item> Outdoor Recreation</item>
+        <item> Sports &amp; Fitness</item>
+        <item> Pet Supplies</item>
+        <item> Baby</item>
+        <item> Apparel &amp; Accessories</item>
+        <item> Baby &amp; Toddler Toys</item>
+        <item> Car Seats &amp; Accessories</item>
+        <item> Pregnancy &amp; Maternity</item>
+        <item> Strollers &amp; Accessories</item>
+        <item> Women\'s fashion</item>
+        <item> Clothing</item>
+        <item> Shoes</item>
+        <item> Watches</item>
+        <item> Handbags</item>
+        <item> Accessories</item>
+        <item> Men\'s fashion</item>
+        <item> Clothing</item>
+        <item> Shoes</item>
+        <item> Watches</item>
+        <item> Accessories</item>
+        <item> Electronics</item>
+        <item> Computers</item>
+        <item> Monitors</item>
+        <item> Printers &amp; Scanners</item>
+        <item> Camera &amp; Photo</item>
+        <item> Smartphone &amp; Tablet</item>
+        <item> Audio</item>
+        <item> Television &amp; Video</item>
+        <item> Video Game Consoles</item>
+        <item> Wearable Technology</item>
+        <item> Accessories &amp; Supplies</item>
+        <item> Irons &amp; Steamers</item>
+        <item> Vacuums &amp; Floor Care</item>
+        <item> Games &amp; Videogames</item>
+        <item> Action Figures &amp; Statues</item>
+        <item> Arts &amp; Crafts</item>
+        <item> Building Toys</item>
+        <item> Dolls &amp; Accessories</item>
+        <item> Kid\'s Electronics</item>
+        <item> Learning &amp; Education</item>
+        <item> Tricycles Scooters &amp; Wagons</item>
+        <item> Videogames</item>
+        <item> Automotive</item>
+        <item> Car Electronics &amp; Accessories</item>
+        <item> Accessories</item>
+        <item> Motorcycle &amp; Powersports</item>
+        <item> Replacement Parts</item>
+        <item> RV Parts &amp; Accessories</item>
+        <item> Tools &amp; Equipment</item>
+    </string-array>
+    <string name="favourites">Favourites</string>
+    <string name="bought_items">Bought items</string>
+    <string name="sendReviewButton">Send</string>
+    <string name="insert_a_review">Insert a review</string>
+    <string name="choose_buyer">Choose the buyer</string>
+    <string name="no_review_to_see">No review available</string>
+    <string name="search_location">Insert location…</string>
+    <string name="search_button">Search</string>
+    <string name="no_connection_location">Can\'t connect to the server, please retry later</string>
+    <string name="no_location">Location \"%1$s\" not found</string>
+    <string name="confirmSellDialogMessage">Are you sure you want to sell your item to %1$s? Your advertisement will be permanently deleted.</string>
+    <string name="delete">Delete</string>
+    <string name="confirmDeleteItem">Are you sure you want to permanently delete this advertisement?</string>
+</resources>
